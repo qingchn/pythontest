@@ -13,7 +13,13 @@ namelist = ['a','b','c','d','e','f','g']
 
 while True:
     print "OK,Let's go choice the year lucker"
-    print '%s \n' %namelist[randint(0,len(namelist)-1)]
+    lucker = '%s \n' %namelist[randint(0,len(namelist)-1)]
     action = raw_input('Enter')
+    if lucker == str(action):
+        print "OK ,The lucker is %s" %(lucker)
+        break
+    else:
+        continue
+
 
 
